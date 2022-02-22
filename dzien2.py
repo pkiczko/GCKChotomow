@@ -97,4 +97,25 @@ if (pada_deszcz or brak_chmur):
     print("bierzemy parasolkę")
 
 
+#1. Napisać program obliczający pole trójkąta 
+# (wzór P = wysokość * długość * 0.5)
+# , gdzie długość wysokość wprowadzane przez 
+# użytkownika
+#2. Wzór na obwód trójkąta - podobnie jak zadanie 3 - 
+# zbieramy 3 długości ścian trójkąta, wynik (obwód)
+# to ich suma
+#3. Wprowadz (przez input) ilość lat - program 
+# obliczy ile sekund te lata trwają
+#(minuta 60s, godzina 60 minut, dzień 24 godziny, 365 dni)
+# (60*60*24*365 - tyle sekund ma 1den rok)
+
+#Podpowiedź do zadań
+wysokosc = int(input("Podaj wysokość trójkąta: "))
+#funkcja int() zamienia zawartość na liczbę całkowitą
+#zaś input() pobiera od użytkownika dane
+
+print(wysokosc) # sprawdzenie czy dobrze zostało zapisane
+
+print("Wynik: ", wysokość * długość * 0.5)
+
 
