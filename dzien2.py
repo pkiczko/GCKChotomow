@@ -1,6 +1,10 @@
 #materiały: 
 #https://github.com/Asabeneh/30-Days-Of-Python/blob/master/03_Day_Operators/03_operators.md
 
+#kompilator online pythona
+#np: https://www.onlinegdb.com/online_python_compiler
+# https://py2.codeskulptor.org/
+
 x = 5
 y = '123 test @@@'
 
