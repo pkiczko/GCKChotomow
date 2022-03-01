@@ -25,3 +25,65 @@ wiersz1= "\t1.\t2.\t3."
 wiersz2= "\n\tPoznań\tWarszawa\tOstrołęka"
 wiersz3= "\n\tpomarańczowy\tzielony\tturkusowy"
 print(wiersz1.expandtabs(20), wiersz2.expandtabs(20), wiersz3.expandtabs(20))
+#dzięki zwiekszeniu odstępów \t tabelka nie rozjeżdża się
+
+print(zdanie.endswith("Ala."))  #True (Tak)
+print(zdanie.endswith("Ala"))   #False (Nie)
+print(zdanie.endswith("a."))    #True (Tak)
+
+zdanie2 = "Rumcajs ma czarną brodę i modne trzewiki."
+
+print(zdanie.find("Ala")) #0 bo pierwszse wystąpianie na pozycji 0
+print(zdanie2.find("od")) #20 bo 20sta pozycja
+#find znajduje tylko pierwsze wystąpienie wyszukiwanych liter/znaków
+
+#isalpha() - sprawdza czy dany string ma znaki zawarte w alfabecie
+
+print(cytat.isalpha())
+slowo = "Wżdy "
+print(slowo.isalpha())
+
+cyfra = "50"
+cyfra2 = 50
+cyfra3 = 50.5
+print(cyfra.isdigit()) #można sprawdzić czy zawaratość stringu to liczba
+print(type(cyfra))  #sprawdzenie typu zmiennej
+print(type(cyfra2)) #'int' czyli integer - liczba całkowita
+print(type(cyfra3)) #'float' znaczy liczba ułamkowa
+
+print("cyfra".isidentifier()) #True - znaczy ze to jest poprawna nazwa
+                              #wg Pythona dla zmiennej
+
+#zielonyTrawnik nazewnictwo w stylu tzw. "camelback"
+print("###### Mała/Wielka litera #######")
+#sprawdzanie czy słowo/słowa są wszystkie napisane małą literą
+print(abc.islower()) #True, bo string zawiera tylko małe litery
+print(abc.isupper()) #False
+
+print(abc.upper()) #zamienia wszystkie litery na wielkie
+print(cytat.lower()) #jak wyżej, tylko na małe
+
+##komendy split() oraz join()
+
+print(cytat.split(" ")) #znakiem dzielącym jest tu spacja (" ")
+print(cytat) #by na stałe podzieliło cytat na zbiór słów
+            #należy przypisać do tego zmienną, jako poniżej
+podzielone = cytat.split(" ")
+print(podzielone)
+polaczone = "-".join(podzielone)
+print(polaczone)
+
+#### replace() - zamiana znaków w stringu #####
+
+print(cytat.replace(',', '').replace('.', ''))  #w ten sposób pozbyliśmy się
+                                                #całej interpunkcji z cytatu
+oddzielne_slowa = cytat.replace(',', '').replace('.', '').split(" ")
+
+print(oddzielne_slowa)
+
+print(oddzielne_slowa[1][0:3])
+
+zlozony_zbior = [ [[1,2,3], [5,5,5], "zielony"],'abc' ]
+
+print(zlozony_zbior[0][1]) #[5,5,5]
+print(zlozony_zbior[0][1][1])
