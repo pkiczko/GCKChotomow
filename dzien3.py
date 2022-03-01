@@ -86,4 +86,28 @@ print(oddzielne_slowa[1][0:3])
 zlozony_zbior = [ [[1,2,3], [5,5,5], "zielony"],'abc' ]
 
 print(zlozony_zbior[0][1]) #[5,5,5]
-print(zlozony_zbior[0][1][1])
+print(zlozony_zbior[0][1][1]) #5 - ta środkowa!
+
+#zadanie 1
+#Połącz słowa 'Trzydzieści', 'Dni' oraz "Python'a" - wynik  "Trzydzieści Dni Python'a".
+
+#Zadanie 2
+#Podziel string "Facebook, Google, Microsoft, Apple, IBM, Oracle, Amazon" 
+# używając przecinków jako miejsce podziału
+
+#Zadanie 3
+#Połącz zbiór ['Django', 'Flask', 'Bottle', 'Pyramid', 'Falcon'] w jeden string,
+#znak łączenia niech będzie "_".
+
+#Zadanie 4
+#Używając metod drukowania stringów napisać:
+'''
+ 8 + 6 = 14 #print('8 + 6 = ', 8+6)
+ 8 - 6 = 2
+ 8 * 6 = 48
+ 8 / 6 = 1.33
+ 8 % 6 = 2
+8 // 6 = 1
+8 ** 6 = 262144
+'''
+
