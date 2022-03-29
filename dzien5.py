@@ -71,6 +71,20 @@ print(dol)
 
 spacja = ' '
 symbol_hash = "#"
-for k in range(5):
+for k in range(5): #choinka
     print((5-k)*spacja, k*2*symbol_hash)
 
+#wydrukuj tabliczkę mnożenia
+print('\t 1 \t 2\t 3\t 4\t 5\t 6\t 7\t 8\t 9\t 10')
+for i in range(10): 
+    print(i+1, '\t', (i+1)*1,'\t', (i+1)*2,'\t', (i+1)*3,'\t', (i+1)*4,'\t', (i+1)*5,'\t', (i+1)*6,'\t', (i+1)*7,'\t', (i+1)*8,'\t', (i+1)*9,'\t', (i+1)*10)
+
+for i in range(10):
+    for j in range(10):
+        print((j+1)*(i+1), end="\t")
+        if(j==9):
+            print("\n")
+
+#skopiuj https://github.com/Asabeneh/30-Days-Of-Python/blob/master/data/countries.py
+# do folderu roboczego.
+#Użyj pętli by wypisać wszystkie kraje które zawierają słowo 'land'
